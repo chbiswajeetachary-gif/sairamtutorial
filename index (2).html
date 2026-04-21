@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sai ram tutorial- Best +2 Science Coaching</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        /* Hindi Text */
+        .hindi-text {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #ffd700;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: golden;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            background: linear-gradient(rgba(255,107,107,0.9), rgba(78,205,196,0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="200" r="50" fill="%23fff" opacity="0.1"/><circle cx="800" cy="300" r="30" fill="%23fff" opacity="0.1"/></svg>');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sai-baba-photo {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #ffd700;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.35), 0 0 0 4px rgba(255,255,255,0.6);
+            margin: 0 auto 1.5rem;
+            display: block;
+            background: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .sai-baba-photo {
+                width: 160px;
+                height: 160px;
+            }
+        }
+
+        .hero-content .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffd700;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ff6b6b;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+
+        /* Subjects Section */
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            background-image: linear-gradient(white, white),
+                              linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            position: relative;
+        }
+
+        .subject-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #ffd700, #4ecdc4);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(255,107,107,0.25);
+            border-color: #ff6b6b;
+        }
+
+        .subject-icon {
+            font-size: 4rem;
+            color: #4ecdc4;
+            margin-bottom: 1rem;
+        }
+
+        .subject-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Results Section */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            color: #fff8dc;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 3px solid #ffd700;
+            box-shadow: 0 8px 24px rgba(255,107,107,0.2), inset 0 0 0 1px rgba(255,255,255,0.2);
+        }
+
+        .result-rank {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Fees Section */
+        .fees-table {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 2px solid #4ecdc4;
+            border-top: 6px solid #ff6b6b;
+        }
+
+        .fee-plan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 2px dashed #4ecdc4;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .fee-plan:hover {
+            background: rgba(78,205,196,0.05);
+            border-color: #ff6b6b;
+        }
+
+        .fee-plan:last-child {
+            border-bottom: none;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: 2px solid #ffd700;
+        }
+
+        .fee-amount {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            border: 3px solid #ffd700;
+            box-shadow: 0 4px 12px rgba(255,107,107,0.4);
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 3px #25D366;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats {
+                gap: 1.5rem;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i> Sai Ram Tutorial
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#subjects">Courses</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sai_Baba.jpg" alt="Shirdi Sai Baba" class="sai-baba-photo" loading="lazy">
+            <h1 class="English-text">Sai ram tutorial</h1>
+            <p class="tagline">+2 Science के लिए No.1 कोचिंग | 95%+ Results</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div>Students</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div>Pass Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div>Toppers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects -->
+    <section id="subjects">
+        <h2>🚀 Check Our Courses</h2>
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <div class="subject-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Physics</h3>
+                <p>Board + IIT-JEE Level | Daily Practice | Doubt Clearing</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <h3>Chemistry</h3>
+                <p>Organic, Inorganic, Physical | Reaction Mechanism</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3>Maths</h3>
+                <p>Calculus, Algebra, Geometry | 100+ Practice Sheets</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>English</h3>
+                <p>Grammar, Comprehension, Writing Skills</p>
+            </div>
+            <div class="subject-card">
+                <div class="subject-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Biology</h3>
+                <p>Learn concepts of Botany & Zoology with easy explanation
+                    Learn about living organisms, human body, plants, and environment with easy concepts
+        </div>
+    </section>
+
+    <!-- Results -->
+   
+           
+
+    
+    
+                
+             
+                
+            </div>
+            <div class="fee-plan">
+                <div>
+                    <h3>🟢 FULL PACKAGE</h3>
+                    <p>Physics + Chem + Maths + English<br>📚 Study Material Free<br>✅ 100% Results Guarantee</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>अभी Join करो!</h2>
+        <div class="contact-content">
+            <div>
+                <h3>📍 Sai Ram Tutorial</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <div>Your City, [State]</div>
+                        <div>Near [Landmark]</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>+91 98XXX XXXXX</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>Mon-Sat: 4pm - 7PM</div>
+                    </div>Sun:Morning class
+                </div>
+                <a href="https://wa.me/?text=Hi%20Sir,%20+2%20Science%20batch%20join%20karna%20hai" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    अभी Call/WhatsApp करो
+                </a>
+            </div>
+            <div>
+                <h3>🎯 Limited Seats Available!</h3>
+                <div style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    <i class="fas fa-check-circle" style="color:#4ecdc4;"></i> 95%+ Results<br>
+                    <i class="fas fa-check-circle" style="color:#4ecdc4;"></i> Free Study Material<br>
+                    <i class="fas fa-check-circle" style="color:#4ecdc4;"></i> Daily Test Series<br>
+                    <i class="fas fa-check-circle" style="color:#4ecdc4;"></i> Individual Doubt Clearing
+                
+               
+                    
+                
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // WhatsApp auto message
+        document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const phone = '98XXXXXXXXX'; // अपना नंबर यहाँ डालो
+                const message = encodeURIComponent('नमस्ते सर, +2 Science batch join करना है। Fees और timing बताइए।');
+                window.open(`https://wa.me/91${phone}?text=${message}`, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
